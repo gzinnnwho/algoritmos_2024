@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-size: cover;
+    font-family: "Pixelify Sans", sans-serif;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2310974141604980016/B4EF3A7A2D1772DE26B1A6F51CE33A04FD8BB917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+}
+
+#tudo{
+    background-color: rgba(47, 79, 79, 0.664);
+width: 350px;
+height: 500px;
+border-radius: 30px;
+border: 5px solid black;
+margin: auto;
+text-align: center;
+animation: animar infinite;
+animation-duration: 0.5s;
+box-shadow: 10px -10px 10px rgb(212, 65, 39);
+}
+
+h1{
+    color: rgb(58, 70, 37);
+}
+
+p{
+    font-size: 25px;
+    color: #333;
+    background-color: rgba(119, 136, 153, 0.849);
+}
+
+input{
+    padding: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px #000000);
+    margin: 5px;
+    
+}
+#resultado{
+    background-color: #333333b7;
+    margin: auto;
+    width: 80%;
+    height: 80px;
+    text-align: auto;
+    margin-top: 20px;
+    font-size: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: white;
+}
+
+button{
+    border-radius: 10px;
+   font-size: 17px;
+   border: 3px solid black;
+ background-color: rgba(255, 182, 193, 0.705);
+ transition: 0.2s;
+ margin: 3px;
+ font-family: "Pixelify Sans", sans-serif;
+ cursor: pointer;
+}
+
+.botaoLimpar{
+    border-radius: 10px;
+    font-size: 17px;
+    border: 3px solid black;
+  background-color: rgba(224, 27, 57, 0.705);
+  transition: 0.2s;
+  margin: 3px;
+  font-family: "Pixelify Sans", sans-serif;
+ }
+
+
+button:hover{
+    font-size: 15px;
+    filter: drop-shadow(4px 5px 4px black);
+}
+
+@keyframes animar{
+
+ 0%{ box-shadow: 5px -5px 5px rgb(212, 65, 39); }
+25%{ box-shadow: 5px  5px 5px purple;}
+50%{box-shadow: -5px  5px 5px violet;}
+75%{box-shadow: -5px -5px 5px rgb(214, 84, 186);}
+    
+    
+    
+    
+    }

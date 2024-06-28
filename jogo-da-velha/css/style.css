@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+.quadrado {
+  width: 200px; /*largura*/
+  height: 200px; /*altura*/
+  font-size: 150px; /*tamanho da fonte*/
+  background-color: darkslateblue; /*cor de fundo*/
+  color: rgb(255, 255, 255); /*cor da letra*/
+  border-radius: 15px; /*arredondar bordas*/
+  border: 5px solid black;
+}
+
+.painel {
+  width: 1000px; /*largura da div*/
+  border: 1px solid black; /*borda*/
+  margin: auto; /*centralizar div*/
+  text-align: center; /*centralizar conteúdo*/
+  padding: 40px; /*espaçamento interno*/
+  border-radius: 1000px;
+  background-color: rgba(0, 0, 0, 0.601);
+  box-shadow: 20px -20px 20px pink;
+  animation: animar infinite ;
+  animation-duration: 0.5s;
+  /* display: flex; */
+}
+
+
+@keyframes animar{
+
+0%{ box-shadow: 20px -20px 20px pink; }
+25% { box-shadow: 20px 20px 20px purple;}
+50%{box-shadow: -20px 20px 20px violet;}
+75%{box-shadow: -20px -20px 20px rgb(218, 114, 114);}
+
+
+
+
+}
+
+body {
+  background-image: url(https://images7.alphacoders.com/846/846480.png);
+  background-size: cover;
+}
+
+.jogo {
+  margin: auto;
+}
+
+button {
+  background-color: rgb(73, 13, 97); /*cor do botão*/
+  color: rgb(201, 201, 201); /*cor da letra*/
+  border: 2px solid black; /*desativar borda*/
+  padding: 10px; /*espaçamento interno*/
+  margin-top: 20px; /*margem de cima*/
+  border-radius: 10px; /*arredondar botão*/
+  filter: drop-shadow(4px 3px 2px #333);
+  cursor: pointer;
+}
+/*quando passar o mouse no botão aplica efeito*/
+button:hover {
+  background-color: rgb(61, 3, 88); /*cor de fundo*/
+  transition: 0.4s; /*tempo de transição*/
+}
+
+#q1 {
+  background-color: rgba(145, 80, 206, 0.274);
+}
+#q2 {
+  background-color: rgb(54, 54, 54, 0.274);
+}
+#q3 {
+  background-color: rgb(0, 27, 102, 0.274);
+}
+
+#q4 {
+  background-color: rgb(0, 27, 102, 0.274);
+}
+#q5 {
+  background-color: rgb(145, 80, 206, 0.274);
+}
+#q6 {
+  background-color: rgb(54, 54, 54, 0.274);
+}
+
+#q7 {
+  background-color: rgb(54, 54, 54, 0.274);
+}
+
+#q8 {
+  background-color: rgb(0, 27, 102, 0.274);
+}
+
+#q9 {
+  background-color: rgb(145, 80, 206, 0.274);
+}
+
+#jogadores{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+
+#nome{
+  padding: 5px;
+  border-radius: 20px;
+  /* height: 30px; */
+  font-size: 20px;
+} 
+
+li{
+  color: hotpink;
+  list-style: none;
+  font-size: 30px;
+ 
+  
+  width: 50%;
+  text-align: right;
+}

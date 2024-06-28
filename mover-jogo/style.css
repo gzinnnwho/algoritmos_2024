@@ -1,0 +1,8 @@
+.personagem{
+    width: 600px;
+    height: 600px;
+    background-color: darkolivegreen;
+    position: absolute;
+    border: 2px solid black;
+    /* border-radius: 300px; */
+}

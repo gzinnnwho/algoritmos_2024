@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+
+    body {
+      background-color: rgba(104, 50, 155, 0.514);
+      margin: 10px;
+    }
+
+    .painel {
+      max-width: 500px;
+      height: 500px;
+      margin: auto;
+      text-align: center;
+      background-color: white;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 30px;
+      margin-top: 20px;
+      font-family: "Tiny5", sans-serif;
+      /* background-color: rgba(104, 50, 155, 0.514); */
+      border: 2px solid rgba(0, 0, 0, 0.658);
+    }
+    #sim,
+    #nao {
+      background-color: hotpink;
+      border-radius: 10px;
+      font-size: 17px;
+      color: rgb(68, 67, 67);
+      font-family: "Tiny5", sans-serif;
+      cursor: pointer;
+      margin-left: -60px;
+    }
+
+    #nao {
+      background-color: crimson;
+      position: absolute;
+      margin-left: 10px;
+    }
+
+    #sim:hover,
+    #nao:hover {
+      background-color: brown;
+      transition: 0.8s;
+    }
+  </style>
+
+  <body>
+    <div class="painel">
+      <h1>FELIZ DIA DOS NAMORADOS</h1>
+      <h2>VOCÊ É MINHA MACACA ALBINA <3</h2>
+
+      <img
+        src="https://media.tenor.com/a0tfh19WVxQAAAAM/heart.gif"
+        width="200px"
+      />
+
+      <h3>QUER NAMORAR COMIGO?</h3>
+      <a href="https://www.youtube.com/watch?v=lpX60JHrfQM"> <button id="sim">SIM!</button></a>
+      <button onclick="fugir()" onmouseover="fugir()" id="nao">Não</button>
+    </div>
+
+    <script>
+      function fugir() {
+        let botaoNao = document.getElementById("nao");
+
+        // pegar largura e altura total da tela
+        let larguraJanela = window.innerWidth;
+        let alturaJanela = window.innerHeight;
+
+        // no tamanho da tela, desconsiderando o tamanho do botao
+        let maxX = larguraJanela - botaoNao.offsetWidth;
+        let maxY = alturaJanela - botaoNao.offsetHeight;
+
+        // sortear posição aleatoria
+        let aleatorioX = Math.floor(Math.random() * maxX);
+        let aleatorioY = Math.floor(Math.random() * maxY);
+
+        // manipular posiçoes dos botoes html
+        botaoNao.style.left = aleatorioX + 'px';
+        botaoNao.style.top = aleatorioY + 'px';
+
+
+
+      }
+    </script>
+  </body>
+</html>

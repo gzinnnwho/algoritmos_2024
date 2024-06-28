@@ -1,0 +1,93 @@
+*{
+box-sizing: 0;
+margin: 0;
+padding: 0;
+}
+
+button{
+    border-radius: 5px;
+    background-color: darkslategray;
+    font-size: 30px;
+    color: #7c7c7c;
+    filter: drop-shadow(4px 3px 4px black);
+    position: absolute;
+    left: 700px;
+    top: 80px;
+
+}
+button:hover{
+  font-size: 25px;
+  filter: drop-shadow(5px 5px 3px black);
+}
+
+.game-board{
+    width: 100%;
+    height: 700px;
+    border: 10px solid ;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    /* background-image: url('https://media.istockphoto.com/id/689045072/pt/vetorial/pixel-art-kitchen.jpg?s=170667a&w=0&k=20&c=RGAGLALDcJxOSg-RdO8Wm8dMYOUQKSjLq_2lBwTgJzw='); */
+    background-size: cover;
+background-color: #7c7c7c;
+}
+.mulher{
+    width: 300px;
+    position: absolute;   
+    bottom: 0;
+    
+      
+}
+.pia{
+    bottom: 0;
+    position: absolute;
+    
+    width: 250px;
+    right: -250px;
+    animation: pia-animation 2s infinite linear;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+@keyframes pia-animation{
+    from{
+        right: -250px;
+
+    }to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0;
+      }
+      30%{
+        bottom: 280px;
+      }
+      35%{
+        bottom: 280px;
+      }
+      40%{
+        bottom: 210px;
+      }
+      50%{
+        bottom: 210px;
+      }
+      60%{
+        bottom: 210px;
+      }
+      65%{
+        bottom: 280px;
+      }
+      70%{
+        bottom: 280px;
+      }
+    
+      100%{
+        bottom: 0;
+      }
+     
+}
